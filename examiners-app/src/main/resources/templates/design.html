@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns="http:/ /www.w3.org/1999/xhtml" xmlns:th="http:/ /www.thymeleaf.org">
+
+<head>
+	<title>ExaminersApp</title>
+	<link rel="stylesheet" th:href="@{/styles.css}" />
+</head>
+
+<body>
+	<h1>Wprowadz szczegoly dodawanego egzaminu:</h1>
+	<form method="POST">
+		<p>Wynik:</p>
+		<input type="radio" id="positive" name="result" value="P">
+		<label for="positive">P</label>
+
+		<input type="radio" id="negativeTraffic" name="result" value="n">
+		<label for="negativeInTraffic">n</label>
+
+		<input type="radio" id="negativeManoeuvringArea" name="result" value="N">
+		<label for="negativeManoeuvringArea">N</label>
+
+		<input type="radio" id="didNotTakePlace" name="result" value="X">
+		<label for="didNotTakePlace">X</label>
+		
+		</br></br>
+		<label for="cars">Kategoria:</label>
+
+		<select name="category" id="category">
+			<option value="AM">AM</option>
+			<option value="A1">A1</option>
+			<option value="A2">A2</option>
+			<option value="A">A</option>
+			<option value="B1">B1</option>
+			<option value="B" selected>B</option>
+			<option value="C1">C1</option>
+			<option value="C">C</option>
+			<option value="D1">D1</option>
+			<option value="D">D</option>
+			<option value="BE">B+E</option>
+			<option value="C1E">C1+E</option>
+			<option value="CE">C+E</option>
+			<option value="D1E">D1+E</option>
+			<option value="DE">D+E</option>
+			<option value="T">T</option>
+		</select>
+
+		</br>
+		<button>Dodaj egzamin</button>
+		</div>
+	</form>
+</body>
+
+</html>
