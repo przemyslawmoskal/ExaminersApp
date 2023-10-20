@@ -9,7 +9,7 @@
 <body>
 	<h1>Wprowadz szczegoly dodawanego egzaminu:</h1>
 	<form method="POST">
-		<p>Wynik:</p>
+		<label for="result">Wynik:</label>
 		<input type="radio" id="positive" name="result" value="P">
 		<label for="positive">P</label>
 
@@ -21,9 +21,9 @@
 
 		<input type="radio" id="didNotTakePlace" name="result" value="X">
 		<label for="didNotTakePlace">X</label>
-		
+
 		</br></br>
-		<label for="cars">Kategoria:</label>
+		<label for="category">Kategoria:</label>
 
 		<select name="category" id="category">
 			<option value="AM">AM</option>
@@ -43,8 +43,16 @@
 			<option value="DE">D+E</option>
 			<option value="T">T</option>
 		</select>
-
-		</br>
+		
+		</br></br>
+		<label for="car">Car number:</label>
+		<textarea id="car" name="car" rows="1" cols="20"></textarea>
+		
+		</br></br>
+		<label for="notes">Dodatkowe uwagi:</label>
+		<textarea id="notes" name="car" rows="2" cols="20"></textarea>
+		
+		</br></br>
 		<button>Dodaj egzamin</button>
 		</div>
 	</form>

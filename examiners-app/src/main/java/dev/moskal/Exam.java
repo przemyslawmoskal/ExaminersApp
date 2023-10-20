@@ -9,5 +9,6 @@ public class Exam {
 	private final String category;
 	private final Date date;
 	private final String result;
+	private final String car;
 	private final String otherDetails;
 }
